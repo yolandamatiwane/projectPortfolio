@@ -12,9 +12,7 @@ body{
 
 #navbar{
     background-color: hsla(314, 66%, 76%, 0.218);
-    height: 60px;
-    
-    
+    height: 60px;  
 }
 /* Home Page*/
 #card{
@@ -56,6 +54,9 @@ body{
     justify-content: center;
 }
 /* Resume Page */
+.resBody{
+    margin-top: 50px;
+}
 .main-timeline:after{
     content: '';
     display: block;
@@ -63,14 +64,14 @@ body{
 }
 .main-timeline .timeline{
     width: calc(50% + 58px);
-    border-top: 2px solid #404247;
+    border-top: 2px solid #64e0e9;
     float: left;
     position: relative;
     z-index: 1;
 }
 .main-timeline .timeline:before{
     content: "";
-    background: #404247;
+    background: #64e0e9;
     width: 10px;
     height: 10px;
     border-radius: 50px;
@@ -79,7 +80,8 @@ body{
     right: 0;
 }
 .main-timeline .timeline-content{
-    color: #404247;
+    color: #8d8a8a;
+    text-decoration: none;
     text-align: center;
     padding: 15px 80px 15px 10px;
     display: block;
@@ -134,10 +136,9 @@ body{
     right: auto;
     left: -15px;
 }
-.main-timeline .timeline:nth-child(4n+2) .timeline-content:before{ background: #ff3e7c; }
+.main-timeline .timeline:nth-child(4n+2) .timeline-content:before{ background: #343636; }
 .main-timeline .timeline:nth-child(4n+3) .timeline-content:before{ background: #7438be; }
-.main-timeline .timeline:nth-child(4n+4) .timeline-content:before{ background: #bdc203; }
+.main-timeline .timeline:nth-child(4n+4) .timeline-content:before{ background: #f87cc9; }
 @media screen and (max-width:767px){
     .main-timeline .timeline{ width: 100%; }
 }
-License Terms
