@@ -8,12 +8,12 @@ body{
     background-size: cover;
     align-items: center;
     color: rgb(134, 9, 118);
-    margin-top: 55px;
+    margin-top: 80px;
 }
 
 #navbar{
-    background-color: hsla(314, 66%, 76%, 0.218);
-    height: 60px;  
+    background-color: hsla(323, 92%, 77%, 0.293);
+    height: 60px;
 }
 /* Home Page*/
 #card{
@@ -44,14 +44,19 @@ body{
 
 /* About Page */
 .aboutDetails{
-    margin-top: 100px;
-    border-right-color: black;
+    margin-top: 80px;
 }
+
+#line{
+    border-left: 2px solid white;
+}
+
 
 /* Projects Page */
 .row{
     justify-content: space-evenly;
 }
+
 /* Resume Page */
 #resContainer{
     margin: 10%;
@@ -144,4 +149,9 @@ body{
 .main-timeline .timeline:nth-child(4n+4) .timeline-content:before{ background: #f87cc9; }
 @media screen and (max-width:767px){
     .main-timeline .timeline{ width: 100%; }
+}
+/* Testimonials */
+#carouselExampleCaptions img{
+   justify-content: center;
+    height: 400px;
 }
