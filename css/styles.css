@@ -53,12 +53,22 @@ body{
   }
 
 /* About Page */
+body{
+    margin: 80px;
+}
+/* #splitUp{
+    background-color: #011113;
+    height: 50%;
+} */
 .aboutDetails{
     margin-top: 80px;
 }
 
 #line{
-    border-left: 2px solid white;
+    border-left: 2px solid #ffffff ;
+}
+#intCards .card {
+    background-color: rgba(82, 197, 207, 0.226) ;
 }
 
 
