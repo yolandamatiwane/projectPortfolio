@@ -12,15 +12,25 @@ body{
 }
 
 #navbar{
-    background-color: hsla(323, 92%, 77%, 0.293);
+    background-color: hsla(0, 0%, 100%, 0.293);
     height: 60px;
 }
 /* Home Page*/
 #card{
-    margin: 15%;
+    margin: 15% 10%;
     background-color: rgba(207, 200, 203, 0.156);
     width: 80%;
     border: none;
+}
+#card .card-text{
+    color: #e964e9;
+    font-weight: 800;
+}
+#nav a{
+    color: #ffffff;
+}
+#nav a:hover{
+    color: #e964e9;
 }
 .typewriter h1 {
     overflow: hidden; 
