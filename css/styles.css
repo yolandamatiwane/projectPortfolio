@@ -8,7 +8,9 @@ body{
     background-size: cover;
     align-items: center;
     color: rgb(134, 9, 118);
-    margin-top: 0;
+}
+main{
+    margin-top: 70px;
 }
 
 #navbar{
@@ -28,7 +30,8 @@ body{
     border: none;
 }
 #card .card-text{
-    color: #e964e9;
+    color: #e85ee8;
+    font-size: 18px;
     font-weight: 800;
 }
 #nav a{
@@ -61,17 +64,24 @@ body{
   }
 
 /* About Page */
-/* body{
-    margin: 80px;
-} */
-/* #splitUp{
-    background-color: #011113;
-    height: 50%;
-} */
-/* .aboutDetails{
-    margin-top: 65px;
-} */
 
+.aboutDetails{
+    margin-top: 70px;
+}
+.aboutDetails h5, .aboutDetails h3, .aboutDetails h2{
+    color: #202a41;
+}
+#line p, .aboutDetails p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #6c0043;
+}
+#line span{
+    font-size: 20px;
+    font-weight: 700;
+    color: #202a41;
+
+}
 #line{
     border-left: 2px solid #ffffff ;
 }
@@ -88,12 +98,14 @@ body{
 .row{
     margin-bottom: 20px;
 }
-
+.in-card img{
+    border-radius: 10px;
+}
 .flip-card{
-    
+    border-radius: 10px;
     background-color: transparent;
     width: 350px;
-    height: 230px;
+    height: 220px;
     border: 1px solid white;
     perspective: 1000px;
     
@@ -102,12 +114,11 @@ body{
     position: relative;
     width: 100%;
     height: 100%;
-    text-align: center;
     transition: transform 1s;
     transform-style: preserve-3d;
 }
 .flip-card:hover .in-card{
-    transform: rotateY(180deg) scale(1.5);
+    transform: rotateY(180deg) scale(1.4);
 }
 .flip-front, .flip-back {
     position: absolute;
@@ -116,33 +127,42 @@ body{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-.flip-front{
-    background-color: #ffffff93;
-    color: #211233;
-}
+
 .flip-back{
-    background-color: #7438be;
-    color: white;
+    border-radius: 10px;
+    background-color: #370721;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #f832e8;
     transform: rotateY(180deg);
     
 }
+@media (max-width: 800px) {
+   .container .row{
+    flex-direction: column;
+
+   }
+
+  }
 
 /* Resume Page */
 #resContainer{
     margin-left: 90px;
     justify-content: center;
 }
-/* .resBody{
-    margin-top: 50px;
-} */
 #skill{
-    margin-left: 200px;
+    margin-left: 300px;
 }
 #skill .card{
-    background-color: #7438be;
+    background-color:rgba(197, 174, 233, 0.462);
+    border: 2px solid #ffffff;
+    color: #211233;
+    font-weight: 700;
 }
+
 #skill #listGroup{
-    color: #00a6f9;
+    color: #b8ece8;
+    background-color: rgba(180, 176, 187, 0.462);
+    
 }
 .main-timeline:after{
     content: '';
@@ -253,6 +273,9 @@ table{
     width: 90%;
     height: 300px;
 }
+#carouselExampleAutoplaying .card-title{
+    color:white
+}
 
 #conCard{
     margin: 30px 10px;
@@ -261,5 +284,27 @@ table{
     height: 300px;
     color: #ffffff;
     background-color: #e964e9;
-    box-shadow:2px 2px 4px #32caf8;
+    box-shadow:2px 2px 4px #f832bd;
 }
+
+form button:hover{
+    border: 2px solid pink;
+}
+.footer{
+    background-color: #e964e9;
+}
+.footerDets .myIcons{
+    padding: 0 50px;
+    display:flex;
+    justify-content: center;
+}
+.myIcons img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e964e9;
+}
+.myIcons img:hover{
+    transform: scale(0.5);
+}
+
