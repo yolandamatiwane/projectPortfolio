@@ -79,7 +79,7 @@ body{
 
 /* Resume Page */
 #resContainer{
-    margin: 10%;
+    margin: 10px;
     justify-content: center;
 }
 .resBody{
