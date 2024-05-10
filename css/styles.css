@@ -18,7 +18,7 @@ body{
 /* Home Page*/
 #card{
     margin: 15% 10%;
-    background-color: rgba(207, 200, 203, 0.156);
+    background-color: rgba(201, 200, 207, 0.156);
     width: 80%;
     border: none;
 }
@@ -53,16 +53,16 @@ body{
   }
 
 /* About Page */
-body{
+/* body{
     margin: 80px;
-}
+} */
 /* #splitUp{
     background-color: #011113;
     height: 50%;
 } */
-.aboutDetails{
-    margin-top: 80px;
-}
+/* .aboutDetails{
+    margin-top: 65px;
+} */
 
 #line{
     border-left: 2px solid #ffffff ;
@@ -73,13 +73,51 @@ body{
 
 
 /* Projects Page */
+.container{
+    padding: 30px;
+    justify-content: space-around;
+}
 .row{
-    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.flip-card{
+    background-color: transparent;
+    width: 400px;
+    height: 250px;
+    border: 1px solid white;
+    perspective: 1000px;
+}
+.in-card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .in-card{
+    transform: rotateY(180deg) scale(1.5);
+}
+.flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-front{
+    background-color: #00a6f9;
+    color: #211233;
+}
+.flip-back{
+    background-color: #7438be;
+    color: white;
+    transform: rotateY(180deg);
 }
 
 /* Resume Page */
 #resContainer{
-    margin: 10px;
+    margin: 50px;
     justify-content: center;
 }
 .resBody{
@@ -92,7 +130,7 @@ body{
 }
 .main-timeline .timeline{
     width: calc(50% + 58px);
-    border-top: 2px solid #011113;
+    border-top: 2px solid #202a41;
     float: left;
     position: relative;
     z-index: 1;
@@ -108,7 +146,7 @@ body{
     right: 0;
 }
 .main-timeline .timeline-content{
-    color: #8d8a8a;
+    color: #3cfff5;
     text-decoration: none;
     text-align: center;
     padding: 15px 80px 15px 10px;
@@ -117,7 +155,7 @@ body{
 }
 .main-timeline .timeline-content:hover{ 
     text-decoration: none; 
-    color: white;
+    color: rgb(255, 0, 187);
 }
 .main-timeline .timeline-content:before{
     content: "";
@@ -167,9 +205,30 @@ body{
 .main-timeline .timeline:nth-child(4n+2) .timeline-content:before{ background: #343636; }
 .main-timeline .timeline:nth-child(4n+3) .timeline-content:before{ background: #7438be; }
 .main-timeline .timeline:nth-child(4n+4) .timeline-content:before{ background: #f87cc9; }
+#exp{
+    background-color:rgba(233, 76, 147, 0.359);
+    border: 2px solid #ffffff;
+    color: #211233;
+}
+#exp:hover{
+    background-color: #e964e9;
+    transform: scale(1.2);
+    color: #3cfff5;
+}
+/* flipping cards on skills */
+table{
+    margin: 1rem auto;
+    width:100%;
+    color:#211233
+}
+:is(caption, thead th, td){
+    border-bottom: 2px solid white;
+}
+
 @media screen and (max-width:767px){
     .main-timeline .timeline{ width: 100%; }
 }
+
 /* Testimonials */
 #carouselExampleCaptions img{
    justify-content: center;
