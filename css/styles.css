@@ -8,12 +8,17 @@ body{
     background-size: cover;
     align-items: center;
     color: rgb(134, 9, 118);
-    margin-top: 80px;
+    margin-top: 0;
 }
 
 #navbar{
     background-color: hsla(0, 0%, 100%, 0.293);
     height: 60px;
+}
+
+:root {
+    --animate-duration: 2s;
+    --animate-delay: 0.9s;
 }
 /* Home Page*/
 #card{
@@ -32,7 +37,10 @@ body{
 #nav a:hover{
     color: #e964e9;
 }
+
 .typewriter h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #32caf8;
     overflow: hidden; 
     border-right: .15em solid rgb(82, 197, 207); 
     white-space: nowrap; 
@@ -75,24 +83,27 @@ body{
 /* Projects Page */
 .container{
     padding: 30px;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .row{
-    margin-top: 30px;
+    margin-bottom: 20px;
 }
+
 .flip-card{
+    
     background-color: transparent;
-    width: 400px;
-    height: 250px;
+    width: 350px;
+    height: 230px;
     border: 1px solid white;
     perspective: 1000px;
+    
 }
 .in-card{
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: 1s;
+    transition: transform 1s;
     transform-style: preserve-3d;
 }
 .flip-card:hover .in-card{
@@ -106,22 +117,32 @@ body{
     backface-visibility: hidden;
 }
 .flip-front{
-    background-color: #00a6f9;
+    background-color: #ffffff93;
     color: #211233;
 }
 .flip-back{
     background-color: #7438be;
     color: white;
     transform: rotateY(180deg);
+    
 }
 
 /* Resume Page */
 #resContainer{
-    margin: 50px;
+    margin-left: 90px;
     justify-content: center;
 }
-.resBody{
+/* .resBody{
     margin-top: 50px;
+} */
+#skill{
+    margin-left: 200px;
+}
+#skill .card{
+    background-color: #7438be;
+}
+#skill #listGroup{
+    color: #00a6f9;
 }
 .main-timeline:after{
     content: '';
@@ -215,14 +236,11 @@ body{
     transform: scale(1.2);
     color: #3cfff5;
 }
-/* flipping cards on skills */
+
 table{
     margin: 1rem auto;
     width:100%;
     color:#211233
-}
-:is(caption, thead th, td){
-    border-bottom: 2px solid white;
 }
 
 @media screen and (max-width:767px){
@@ -230,7 +248,10 @@ table{
 }
 
 /* Testimonials */
-#carouselExampleCaptions img{
-   justify-content: center;
-    height: 400px;
+#carouselExampleAutoplaying #card{
+    width: ;
+}
+#carouselExampleAutoplaying img{
+    width: 90%;
+    height: 300px;
 }
