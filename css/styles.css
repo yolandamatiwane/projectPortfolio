@@ -255,3 +255,13 @@ table{
     width: 90%;
     height: 300px;
 }
+
+#conCard{
+    margin: 30px 10px;
+    text-align: center;
+    align-self: center;
+    height: 300px;
+    color: #ffffff;
+    background-color: #e964e9;
+    box-shadow:2px 2px 4px #32caf8;
+}
